@@ -1,4 +1,4 @@
-// Task 2
+// Task 1: the name of JavaScript
 "use strict";
 
 let name = prompt("what is the 'official' name of JavaScript?", "");
@@ -8,7 +8,7 @@ if (name == "ECMAScript") {
   alert("You don't know? 'ECMAScript'!");
 }
 
-// Task 3
+// Task 2: show the sign
 let num = prompt("please type a number", "");
 if (num > 0) {
   alert(1);
@@ -18,10 +18,10 @@ if (num > 0) {
   alert(0);
 }
 
-// Task 4
+// Task 3: rewrite if into ?
 let result = (a + b) < 4 ? "Below" : "Over";
 
-// Task 5
+// Task 4: rewrite if..else into ?
 let message = (login == "Employee")
   ? "Hello"
   : (login == "Director")

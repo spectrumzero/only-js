@@ -1,4 +1,4 @@
-// javascript as a dynamically typed programming language.
+// NOTE: javascript as a dynamically typed programming language.
 
 // 1, String
 let str = "hello";

@@ -57,7 +57,7 @@ alert(e); // 7
 
 /*===========================================================================================*/
 
-// TASK 3
+// Task 1: fix the addition
 let a1 = prompt("First Number", 1);
 let b1 = prompt("Second Number", 2);
 // prompt returns user's input in the form of string.
@@ -69,4 +69,4 @@ let a2 = +prompt("First Number", 1);
 let b2 = +prompt("Second Number", 2);
 alert(a2 + b2); // 3
 
-// SUGGESTION: one line one action
+// NOTE: one line one action

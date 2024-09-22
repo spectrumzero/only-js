@@ -1,4 +1,4 @@
-// in most cases, operators and functions convert the value given to them to the right type automatically.
+// NOTE: in most cases, operators and functions convert the value given to them to the right type automatically.
 
 // string conversion
 let value = true;

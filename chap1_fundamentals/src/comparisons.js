@@ -1,4 +1,4 @@
-// comparison operators always return a boolean value.
+// NOTE: comparison operators always return a boolean value.
 
 // between numbers
 alert(2 > 1); // true
