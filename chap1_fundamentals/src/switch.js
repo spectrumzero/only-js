@@ -16,6 +16,7 @@ if (browser === "Edge") {
 }
 
 // Task 2: rewrite if into switch
+// use + to convert string a to number a
 let a = +prompt("a?", "");
 switch (a) {
   case 0:
