@@ -34,7 +34,7 @@ alert(age);
 let name;
 alert(name);
 
-// 7, Object: used to store collections of data and more complex entities.
+// 7, Object: used to store collections of data and more complex entities. NOTE: it isnt primitive
 // 8, Symbol: used to create unique identifiers for objects.
 
 // the `typeof` operator returns the type of the operand:
