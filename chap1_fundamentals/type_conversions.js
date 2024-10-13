@@ -16,11 +16,13 @@ alert(typeof str); // String
 let num = Number(str);
 
 // examples:
-alert(Number("297947 ")); // success: 297947
+alert(Number("297947 ")); // 297947
+alert(Number(null)); // 0
+alert(Number(false)); // 0
+alert(+""); // 0
+alert(+" "); // 0
 alert(Number("238238z")); // failed: NaN
 alert(Number(undefined)); // failed: NaN
-alert(Number(null)); // success: 0
-alert(Number(false)); // success: 0
 
 /* boolean conversion */
 
