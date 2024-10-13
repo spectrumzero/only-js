@@ -1,30 +1,45 @@
 "use strict";
-// Declaration:
-let arr = new Array();
-// or
-let fruits = ["Apple", "Orange", "Plum"];
 
-// we can replace an element:
-fruits[2] = "Pear";
-// or add a new one:
-fruits[3] = "Lemon";
+/* Dec */
+let fruits = ["Apple", "Orange", "Plum", { name: "John" }, true];
 
-alert(fruits.length); // 4
-alert(fruits); // show the whole array
+/* length */
+let length = fruits.length; // 5 = largest index + 1
 
-// an array can store elements of any type:
-let anyType = ["apple", { name: "John" }, true, function () {
-  alert("hello");
-}];
+/* at */
+alert(fruits.at(-1)); // true
 
-// get the object at index 1 and then show its name
-alert(anyType[1].name); // John
+/* queue */
+fruits.shift();
+fruits.push("Pear");
 
-// get the function at index 3 and run it
-anyType[3](); // hello
+/* stack */
+fruits.pop();
+fruits.push("Pear");
 
-// Get the last element using `at`:
-// arr.at(i): if i>=0, the expression is exactly the same as arr[i]; if i<0, it steps back from the end of the array
-fruits = ["Apple", "Orange", "Plum"];
-// same as fruits[fruits.length-1]
-alert(fruits.at(-1)); // Plum
+/* unshift */
+fruits.unshift("Peach");
+
+/* delete */
+fruits.length = 0;
+
+/* loop */
+
+// for loop
+let arr = ["Apple", "Orange", "Pear"];
+for (let i = 0; i < arr.length; i++) {
+  alert(arr[i]);
+}
+
+// for of loop
+for (let x of arr) {
+  alert(x); // only values
+}
+
+/* multidimensional arrays */
+let matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+alert(matrix[0][1]); // 2
