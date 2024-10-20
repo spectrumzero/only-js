@@ -16,3 +16,38 @@ date = new Date(2011, 0, 1, 2, 3, 4, 567);
 alert(date); // 20110101, 02:03:04.567
 
 /* Access date components */
+alert(date.getMonth()); // 0-11
+alert(date.getDate()); // 1-31
+alert(date.getDay()); // 0-6
+
+alert(date.getHours());
+alert(date.getUTCHours());
+
+/* Set date components */
+let today = new Date();
+today.setHours(0);
+today.setSeconds(today.getSeconds() + 70);
+alert(today);
+
+/* to number */
+alert(+today);
+
+/* measure time */
+// let start = new Date();
+let start = Date.now();
+
+for (let i = 0; i < 100000; i++) {
+  let doSomething = i * i * i;
+}
+
+// let end = new Date();
+let end = Date.now();
+alert(`the loop took ${end - start} ms`);
+
+// TODO: Benchmarking
+
+/* Date.parse(str) */
+let ms = Date.parse("2012-01-26T13:51:50.417-07:00"); // YYYY-MM-DDTHH:mm:ss.sssZ
+alert(ms); // 1327611110417
+let newdate = new Date(ms);
+alert(newdate);
